@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravellersXperience | Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: #00cc99;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to TravellersXperience</h1>
+    <p>Your guide to affordable adventures in Ghana & beyond</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="Budget-Travel-Guides.html">Budget Travel Guides</a>
+    <a href="portfolio.html">My Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Explore. Experience. Enjoy.</h2>
+    <p>We bring you closer to authentic, budget-friendly travel experiences.</p>
+    <p>Whether you're planning a local getaway or welcoming guests, we're here to help.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TravellersXperience.com | <a href="contact.html" style="color:#00cc99;">Connect with us</a></p>
+  </footer>
+
+</body>
+</html>
