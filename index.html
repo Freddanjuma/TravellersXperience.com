@@ -1,0 +1,82 @@
+<footer class="footer">
+  <p class="fade-in">Thank you for visiting <strong>TravellersXperience.com</strong> — your gateway to affordable adventures.</p>
+  <p class="fade-in delay-1">Ready to discover more?</p>
+  <a href="explore.html" class="explore-btn slide-in">🌍 Explore Top Destinations</a>
+  <br><br>
+  <small class="fade-in delay-2">&copy; 2025 TravellersXperience.com. All rights reserved.</small>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--footer-bg, #111);
+    color: var(--footer-text, #eee);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .explore-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--btn-bg, #00aced);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .explore-btn:hover {
+    background-color: var(--btn-hover, #0077b5);
+    transform: scale(1.05);
+  }
+
+  /* Animation classes */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .delay-1 { animation-delay: 0.5s; }
+  .delay-2 { animation-delay: 1s; }
+
+  .slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.8s ease forwards;
+    animation-delay: 1.2s;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Theme Support */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --footer-bg: #f4f4f4;
+      --footer-text: #333;
+      --btn-bg: #0077b5;
+      --btn-hover: #005999;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --footer-bg: #111;
+      --footer-text: #eee;
+      --btn-bg: #00aced;
+      --btn-hover: #0084b4;
+    }
+  }
+</style>
