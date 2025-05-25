@@ -1,0 +1,4 @@
+<video autoplay muted loop id="bg-video">
+  <source src="https://github.com/Freddanjuma/TravellersXperience.com/blob/main/Team%20Video%20Pitch%20Script%20(1).pdf" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
