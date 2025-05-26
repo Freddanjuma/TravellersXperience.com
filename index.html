@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravellersXperience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffd5;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 85vh;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .hero-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-section video {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .team-section {
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .team-member div {
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">TravellersXperience</span>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="navbar">
+      <a href="#" onclick="loadPage('index6.html')">Portfolio</a>
+      <a href="#" onclick="loadPage('about-us.html')">About Us</a>
+      <a href="#" onclick="loadPage('Budget-Travel-Guides.html')">Budget Travel</a>
+      <a href="#" onclick="loadPage('contact.html')">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero-section">
+    <h2>Welcome to Your Travel Companion</h2>
+    <video autoplay muted loop>
+      <source src="media/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="team-section">
+    <h2>Meet Our Team</h2>
+
+    <div class="team-member">
+      <img src="Benedicta Alx.jpg" alt="Benedicta">
+      <div><strong>Benedicta</strong> - Market Analyst: She researches and validates tourism trends for the platform.</div>
+    </div>
+
+    <div class="team-member">
+      <img src="Fred DanjumaAlx.jpg" alt="Fred">
+      <div><strong>Fred Danjuma</strong> - Backend Developer & Team Lead: Oversees project development and backend infrastructure.</div>
+    </div>
+
+    <div class="team-member">
+      <img src="Marisca Alx.jpg" alt="Marisca">
+      <div><strong>Marisca</strong> - Data Analyst: Provides insights and dashboards on travel behaviors and trends.</div>
+    </div>
+
+    <div class="team-member">
+      <img src="judith alx.jpg" alt="Judith">
+      <div><strong>Judith</strong> - Data Analyst: Builds analysis to understand user needs and tourist locations.</div>
+    </div>
+
+    <div class="team-member">
+      <img src="simon.jpg" alt="Simon">
+      <div><strong>Simon</strong> - UI Designer: Crafts the interface and ensures a smooth user experience across devices.</div>
+    </div>
+  </div>
+
+  <iframe id="pageFrame" src="index6.html"></iframe>
+
+  <script>
+    function loadPage(page) {
+      document.getElementById('pageFrame').src = page;
+      const navbar = document.getElementById('navbar');
+      navbar.classList.remove('active'); // Hide menu on click (mobile)
+    }
+
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
