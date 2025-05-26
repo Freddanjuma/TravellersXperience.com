@@ -2,35 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio – TravellersXperience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - TravellersXperience</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      transition: background 0.5s;
     }
     header {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .portfolio {
-      max-width: 800px;
-      margin: auto;
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      margin: 0;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+    .container {
       padding: 2rem;
     }
-    .project {
-      background: white;
-      margin-bottom: 1rem;
+    .portfolio-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
       padding: 1rem;
-      border-left: 5px solid #007acc;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      color: #1abc9c;
     }
     footer {
-      background: #222;
-      color: white;
+      background: #111;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
@@ -39,27 +68,42 @@
 </head>
 <body>
   <header>
-    <h1>Fred Danjuma – Portfolio</h1>
-    <p>Backend Developer & Founder of TravellersXperience.com</p>
+    <h1>TravellersXperience</h1>
+    <nav>
+      <ul>
+        <li><a href="index5.html">Home</a></li>
+        <li><a href="index6.html">Portfolio</a></li>
+        <li><a href="budget-travel-guide.html">Budget Travel Guides</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="portfolio">
-    <div class="project">
-      <h3>🏨 TravellersXperience.com</h3>
-      <p>A tourism platform offering budget travel tips, guesthouse listings, and travel resources for Ghana and West Africa.</p>
-    </div>
-    <div class="project">
-      <h3>🎥 Streaming Setup for Local Churches</h3>
-      <p>Set up and manage live streaming solutions for churches to broadcast sermons to Facebook and YouTube.</p>
-    </div>
-    <div class="project">
-      <h3>💡 Currency Stability Tracker</h3>
-      <p>Collaborating with ALX team on a platform to stabilize remittance rates for guesthouses and travelers.</p>
+  <div class="container">
+    <h2>My Portfolio</h2>
+    <p>Explore my creative travel solutions and backend web projects.</p>
+
+    <div class="portfolio-section">
+      <div class="card">
+        <h3>Booking System</h3>
+        <p>A full-stack solution for booking local guesthouses with real-time currency conversion.</p>
+      </div>
+      <div class="card">
+        <h3>Tourism Directory</h3>
+        <p>A searchable directory that connects tourists with budget-friendly destinations across Ghana.</p>
+      </div>
+      <div class="card">
+        <h3>Remittance Tracker</h3>
+        <p>Tool that helps hotels manage remittance reports from Airbnb and Booking.com platforms.</p>
+      </div>
     </div>
   </div>
 
   <footer>
-    <p>&copy; 2025 Fred Danjuma – <a href="index.html" style="color: #ccc;">Back to Home</a></p>
+    <p>© 2025 TravellersXperience.com | Connect with us on
+      <a href="https://www.linkedin.com/in/yourprofile" style="color: #1abc9c;">LinkedIn</a> |
+      <a href="https://github.com/yourgithubrepo" style="color: #1abc9c;">GitHub</a>
+    </p>
   </footer>
 </body>
 </html>
