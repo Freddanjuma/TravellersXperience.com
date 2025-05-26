@@ -2,109 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Budget Travel Guides | TravellersXperience</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background-color: #f8f9fa;
       color: #333;
     }
-
     header {
-      background-color: #1a1a1a;
-      color: #fff;
-      padding: 1.5rem;
+      background-color: #2c3e50;
+      color: white;
+      padding: 1.2rem;
       text-align: center;
     }
-
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1abc9c;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
     main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
     }
-
-    section {
-      margin-bottom: 2rem;
-      background: #fff;
+    h1 {
+      text-align: center;
+      color: #1abc9c;
+      animation: fadeIn 1.2s ease-in;
+    }
+    .guide {
+      background: white;
       padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
-
-    h2 {
-      color: #006644;
+    .guide:hover {
+      transform: translateY(-5px);
     }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
     footer {
-      background-color: #1a1a1a;
-      color: #fff;
+      background-color: #2c3e50;
+      color: white;
       text-align: center;
       padding: 1rem;
+      margin-top: 3rem;
     }
-
-    a {
-      color: #00cc99;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Budget Travel Guides</h1>
-    <p>Explore Ghana and Africa without breaking the bank.</p>
   </header>
 
+  <nav>
+    <a href="index5.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="index6.html">Portfolio</a>
+    <a href="budget-travel-guide.html">Travel Guides</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <main>
-    <section>
-      <h2>Top Budget-Friendly Destinations</h2>
-      <ul>
-        <li>Wli Waterfalls – Volta Region</li>
-        <li>Shai Hills Resource Reserve – Greater Accra</li>
-        <li>Nzulezo Village on Stilts – Western Region</li>
-        <li>Kakum National Park – Central Region</li>
-      </ul>
+    <section class="guide">
+      <h2>Top 5 Budget-Friendly Destinations in Ghana</h2>
+      <p>Discover beautiful places like Mole National Park, Cape Coast, and Aburi Gardens — all perfect for the budget-conscious traveller.</p>
     </section>
 
-    <section>
-      <h2>Money-Saving Travel Tips</h2>
-      <ul>
-        <li>Travel during off-peak seasons</li>
-        <li>Book local guesthouses early</li>
-        <li>Eat local food for cheaper and healthier options</li>
-        <li>Use public transport or ride-sharing apps</li>
-      </ul>
+    <section class="guide">
+      <h2>Saving Tips for Your Next Trip</h2>
+      <p>Learn how to cut down costs on transport, accommodation, and food while still having an amazing travel experience.</p>
     </section>
 
-    <section>
-      <h2>Free Activities to Enjoy</h2>
-      <ul>
-        <li>City walking tours</li>
-        <li>Beach hopping along the coast</li>
-        <li>Visiting local markets</li>
-        <li>Community cultural festivals (ask locals!)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Next Steps</h2>
-      <p>Start exploring more <a href="explore.html">here</a> or <a href="contact.html">get in touch</a> for personalized guides.</p>
+    <section class="guide">
+      <h2>Local Guesthouses to Consider</h2>
+      <p>Explore affordable and comfortable guesthouses around Ghana that give you a local and authentic experience.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 TravellersXperience.com | <a href="index.html">Home</a></p>
+    <p>&copy; 2025 TravellersXperience.com | Built with 💚 for Smart Travelers</p>
   </footer>
 </body>
 </html>
