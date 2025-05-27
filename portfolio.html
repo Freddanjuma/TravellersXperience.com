@@ -1,118 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio | TravellersXperience</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f0f0f0;
-      color: #333;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-      padding: 1.5rem;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #1a1a1a;
-      color: white;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-
-    a {
-      color: #00cc99;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Fred Danjuma - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-  <header>
-    <h1>My Portfolio</h1>
-    <p>Showcasing projects and milestones from ALX & TravellersXperience</p>
-  </header>
+  <div class="max-w-5xl mx-auto p-6">
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <img src="Fred-Danjuma.jpg" alt="Fred Danjuma" class="mx-auto w-32 h-32 rounded-full shadow-md">
+      <h1 class="text-3xl font-bold mt-4">Fred Danjuma</h1>
+      <p class="text-lg text-blue-600">Backend Developer & Tourism Tech Entrepreneur</p>
+    </div>
 
-  <main>
-    <section class="portfolio-grid">
-      <div class="card">
-        <h3>TravellersXperience Landing Page</h3>
-        <p>A modern homepage created for budget-conscious travelers. Includes scroll animation and dynamic themes.</p>
-        <a href="index.html" target="_blank">View Page →</a>
-      </div>
+    <!-- Bio -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">About Me</h2>
+      <p class="leading-relaxed">
+        I'm Fred Danjuma, a Backend Web Developer and Founder of <strong>TravellersXperience.com</strong>. 
+        Passionate about building tech solutions that make travel easy and affordable across Africa.
+        I'm currently studying at ALX to deepen my backend expertise and build platforms that solve real tourism challenges.
+      </p>
+    </section>
 
-      <div class="card">
-        <h3>Budget Travel Guides</h3>
-        <p>Compiled budget travel tips and packages for tourists exploring Ghana and Africa.</p>
-        <a href="Budget-Travel-Guides.html" target="_blank">View Page →</a>
-      </div>
+    <!-- Skills -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Tech Skills</h2>
+      <ul class="list-disc pl-6 grid grid-cols-2 md:grid-cols-3 gap-2">
+        <li>Python</li>
+        <li>HTML & CSS</li>
+        <li>Tailwind CSS</li>
+        <li>JavaScript (basic)</li>
+        <li>Backend APIs</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
 
-      <div class="card">
-        <h3>Contact & Booking Form</h3>
-        <p>A responsive contact form built to receive travel inquiries and connect with partners.</p>
-        <a href="contact.html" target="_blank">View Page →</a>
-      </div>
-
-      <div class="card">
-        <h3>ALX Final Project</h3>
-        <p>Our team solution to improving local tourism with a stable rate tracker and booking platform.</p>
-        <a href="#" target="_blank">Coming Soon</a>
+    <!-- Projects -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Featured Project</h2>
+      <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-xl font-bold text-gray-900">TravellersXperience.com</h3>
+        <p>
+          A digital platform offering budget-friendly travel packages, tourism information, and booking support for travelers and guesthouses in Ghana.
+        </p>
+        <a href="https://freddanjuma.github.io/TravellersXperience.com" class="text-blue-600 mt-2 inline-block">Visit Project →</a>
       </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 TravellersXperience.com | <a href="index.html">Home</a></p>
-  </footer>
+    <!-- Certifications -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Certifications</h2>
+      <ul class="list-disc pl-6">
+        <li>ALX Backend Development Program (in progress)</li>
+        <li>Python for Beginners – SoloLearn</li>
+        <li>Website Design with HTML & CSS – FreeCodeCamp</li>
+      </ul>
+    </section>
+
+    <!-- Contact / Resume -->
+    <section>
+      <h2 class="text-2xl font-semibold text-blue-700 mb-3">Let's Connect</h2>
+      <p>Email: <a href="mailto:fred.danjuma@example.com" class="text-blue-600">fred.danjuma@example.com</a></p>
+      <p class="mt-2">
+        <a href="resume.pdf" class="inline-block bg-blue-600 text-white px-4 py-2 mt-3 rounded hover:bg-blue-700">Download Resume</a>
+      </p>
+    </section>
+  </div>
 
 </body>
 </html>
